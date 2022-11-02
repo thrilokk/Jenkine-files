@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Git checkout') {
            steps{
-                git branch: 'main', credentialsId: 'Github', url: 'https://github.com/thrilokk/Terraform-Repo.git'
+                git branch: 'main', url: 'https://github.com/thrilokk/Terraform-Repo.git'
             }
         }
         stage('terraform format check') {
